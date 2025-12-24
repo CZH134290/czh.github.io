@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CZH的简介</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "黑体", sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 导航栏样式 */
+        .nav {
+            width: 100%;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .nav a {
+            flex: 1;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #0000cc;
+        }
+
+        /* 栅格布局容器 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* 内容板块通用样式 */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid blue;
+        }
+
+        /* 滚动文本样式 */
+        .scroll-text {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        /* 图片样式 */
+        .profile-img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* iframe样式 */
+        .iframe-container {
+            margin: 15px 0;
+        }
+
+        /* 返回顶部按钮样式 */
+        .back-to-top {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .back-to-top:hover {
+            background-color: #0000cc;
+        }
+
+        /* 图片映射区域保持原有功能 */
+        map area {
+            cursor: pointer;
+        }
+
+        /* 新增：联系引导样式 */
+        .contact-guide {
+            margin: 50px 0 30px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-guide a {
+            color: blue;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px dashed blue;
+            transition: color 0.3s;
+        }
+
+        .contact-guide a:hover {
+            color: #0000cc;
+            border-bottom: 2px solid #0000cc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部锚点 -->
+    <a name="顶部"></a>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <a href="#个人简介">个人简介</a>
+        <a href="#教育经历">教育经历</a>
+        <a href="#获奖经历">获奖经历</a>
+        <a href="#实习经历">实习经历</a>
+    </div>
+
+    <!-- 个人简介板块 - 栅格布局 -->
+    <div class="section" id="个人简介">
+        <h2>个人简介</h2>
+        <div class="grid-container">
+            <!-- 左侧文本区域 -->
+            <div class="text-content">
+                <marquee class="scroll-text" direction="up" behavior="alternate" scrollamount="3" scrolldelay="50"
+                    onmouseover="this.stop()" onMouseout="this.start()">
+                    <p>CZH,男，2006年出生，数据科学与大数据技术专业，现就读于大连海洋大学</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam aliquid adipisci dolorum omnis reiciendis excepturi rem sit, velit, veritatis, aperiam repellendus deleniti reprehenderit quasi eius tempore. Quis fugiat exercitationem deleniti?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere odio nam quasi cum dolorum corporis eius, obcaecati veritatis sequi odit suscipit illo deleniti expedita ad laboriosam recusandae omnis repellat maxime.</p>
+                </marquee>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea molestias eos exercitationem consectetur adipisci nostrum, itaque esse saepe earum iusto perferendis enim quisquam asperiores cumque tempore aperiam repellendus facilis?</p>
+                
+                <div class="iframe-container">
+                    <iframe name="DLOU" scrolling="no" src="https://www.dlou.edu.cn/" width="100%" height="200px"></iframe>
+                    <p><a href="https://www.dlou.edu.cn/" target="DLOU">我的母校</a></p>
+                </div>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex modi libero quo suscipit consequatur eveniet ipsa praesentium dolores aspernatur omnis sed, possimus soluta. Odio qui adipisci aspernatur voluptatum alias a?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quae quia quas earum ab maxime tempore eum officiis numquam itaque obcaecati eos harum assumenda cupiditate, facere veritatis, ducimus consectetur accusamus.</p>
+            </div>
+
+            <!-- 右侧图片区域 -->
+            <div class="img-content">
+                <img src="29d03e1ddaec0f2d979372e5c35f92c4.jpg" title="CZH的照片" alt="CZH" class="profile-img"
+                    usemap="#映射图片名称">
+                <map name="映射图片名称">
+                    <area shape="circle" coords="125,60,50" href="http://www.baidu.com" target="_blank">
+                    <area shape="circle" coords="20,200,10" href="http://www.360.com" target="_blank">
+                </map>
+            </div>
+        </div>
+        <!-- 返回顶部按钮 -->
+        <a href="#顶部" class="back-to-top">返回顶部</a>
+    </div>
+
+    <!-- 教育经历板块 -->
+    <div class="section" id="教育经历">
+        <h2>教育经历</h2>
+        <p><a href="https://www.dlou.edu.cn/">我的母校</a></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <!-- 返回顶部按钮 -->
+        <a href="#顶部" class="back-to-top">返回顶部</a>
+    </div>
+
+    <!-- 获奖经历板块 -->
+    <div class="section" id="获奖经历">
+        <h2>获奖经历</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <!-- 返回顶部按钮 -->
+        <a href="#顶部" class="back-to-top">返回顶部</a>
+    </div>
+
+    <!-- 实习经历板块 -->
+    <div class="section" id="实习经历">
+        <h2>实习经历</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nostrum accusamus? Quis sunt, deserunt ratione, molestiae quia iure ipsum asperiores omnis blanditiis repellat sapiente possimus neque iusto. Nisi, soluta praesentium.</p>
+        <!-- 返回顶部按钮 -->
+        <a href="#顶部" class="back-to-top">返回顶部</a>
+    </div>
+
+    <!-- 新增：联系引导区域 -->
+    <div class="contact-guide">
+        <p>如果你觉得我还不错，请<a href="CZH的联系方式.html" target="_blank">点击这里</a>获取我的联系方式</p>
+    </div>
+</body>
+
+</html>
